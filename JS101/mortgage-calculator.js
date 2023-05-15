@@ -45,8 +45,8 @@ while (invalidNumber(loanDuration)) {
   loanDuration = readline.question();
 }
 
-let monthsInYear = 12;
-let percentageChanger = 100;
+const monthsInYear = 12;
+const percentageChanger = 100;
 
 let monthlyInterestRate = (loanAPR / percentageChanger) / monthsInYear;
 
