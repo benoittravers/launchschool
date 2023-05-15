@@ -12,7 +12,7 @@ function prompt(msg) {
 }
 
 function invalidNumber(num) {
-  if ((Number.isNaN(Number(num)) === false) || (num <= 0) || num.trim() === '') {
+  if ((Number.isNaN(Number(num)) === false) || (num <= 0)) {
     return false;
   } else {
     return true;
