@@ -45,10 +45,10 @@ while (invalidNumber(loanDuration)) {
   loanDuration = readline.question();
 }
 
-const monthsInYear = 12;
-const percentageChanger = 100;
+const MONTHSINYEAR = 12;
+const DIVIDEBY100 = 100;
 
-let monthlyInterestRate = (loanAPR / percentageChanger) / monthsInYear;
+let monthlyInterestRate = (loanAPR / DIVIDEBY100) / MONTHSINYEAR;
 
 let monthlyPayment = (loanAmount * (monthlyInterestRate /
 (1 - Math.pow((1 + monthlyInterestRate), (-loanDuration))))).toFixed(2);
